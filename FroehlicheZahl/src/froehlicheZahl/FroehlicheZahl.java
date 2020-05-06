@@ -19,10 +19,9 @@ public class FroehlicheZahl
 			while(current!=0)
 			{
 				sum+=(current%10)*(current%10);
-				counter++;
 				current/=10;
 			}
-			
+			counter++;
 			if(seen.contains(sum)||counter>2000)
 			{
 				return false;
